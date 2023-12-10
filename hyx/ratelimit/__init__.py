@@ -1,11 +1,8 @@
-from hyx.ratelimit.api import leakybucket, ratelimiter, tokenbucket
-from hyx.ratelimit.buckets import LeakyBucket, TokenBucket
-from hyx.ratelimit.managers import LeakyBucketLimiter, TokenBucketLimiter
+from hyx.ratelimit.api import ratelimiter, tokenbucket
+from hyx.ratelimit.buckets import TokenBucket
+from hyx.ratelimit.managers import TokenBucketLimiter
 
 __all__ = (
-    "leakybucket",
-    "LeakyBucketLimiter",
-    "LeakyBucket",
     "ratelimiter",
     "tokenbucket",
     "TokenBucketLimiter",
